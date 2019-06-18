@@ -1,4 +1,14 @@
+h1, h2, h3, h4, p, span, li {
+  color: #fff;
+}
+
+a {
+  color: #febf01;
+}
+
 body {
+  background-color: #282c34;
+  min-height: 100vh;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -7,7 +17,84 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.app {
+  text-align: center;
+}
+
+.app-logo {
+  animation: spinningLogo  5s ease;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form {
+  width: 100%;
+}
+
+.search-wrapper input {
+  padding: 10px 25px;
+  width: 25%;
+  border: 0px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid #fff;
+}
+
+.results-list > li {
+  list-style: none;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.footer p {
+  font-size: 12px;
+}
+
+
+@keyframes spinningLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+	  transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .results-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .results-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
