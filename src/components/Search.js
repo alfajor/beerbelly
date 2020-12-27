@@ -1,6 +1,6 @@
 import React from 'react';
 import { fechEndpoint } from './api';
-import Results from './results';
+import Results from './Results';
 import styled from 'styled-components';
 
 class Search extends React.Component {
