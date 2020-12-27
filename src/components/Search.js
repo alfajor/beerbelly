@@ -19,7 +19,6 @@ class Search extends React.Component {
     const sort = `&sort=city`
 
     const sortedURL = this.state.sorted === true ? fullResultsUrl + sort : fullResultsUrl;
-
     fechEndpoint(sortedURL)
      .then(data => { 
        return this.state.results = data
