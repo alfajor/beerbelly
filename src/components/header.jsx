@@ -1,6 +1,5 @@
-import React from 'react';
-import logo from '../images/beermug.png';
 import styled from 'styled-components';
+import logo from '../images/beermug.png';
 
 const Header = () => {
   return (
@@ -19,7 +18,7 @@ const HeaderContainer = styled.header`
   margin-top: 25px;
 
   img {
-    animation: spinningLogo  5s ease;
+    animation: spinningLogo 5s ease-in-out;
     height: 40vmin;
     pointer-events: none;
   }

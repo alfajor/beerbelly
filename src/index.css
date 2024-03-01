@@ -1,23 +1,11 @@
-h1, h2, h3, h4, p, span, li {
+body {
+  background-color: #282c34;
   color: #fff;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Roboto", "Helvetica", sans-serif;
 }
 
 a {
   color: #febf01;
 }
-
-body {
-  background-color: #282c34;
-  min-height: 100vh;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.app {
-  text-align: center;
-}
-
